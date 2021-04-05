@@ -1,0 +1,6 @@
+.Weather {
+  border: 1px solid darkgrey;
+}
+.Weather li {
+  list-style: none;
+}
