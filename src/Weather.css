@@ -15,11 +15,9 @@
   list-style: none;
 }
 
-.Weather img {
+.Weather canvas {
   height: 64px;
   width: 64px;
-  margin-bottom: 40px;
-  margin-right: 10px;
 }
 .Weather .current-temp {
   font-size: 64px;

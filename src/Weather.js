@@ -18,7 +18,7 @@ export default function Weather({ defaultCity }) {
       windSpeed: response.data.wind.speed,
       windDirection: response.data.wind.deg,
       description: response.data.weather[0].description,
-      img: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
     });
   }
 
