@@ -15,10 +15,7 @@
   list-style: none;
 }
 
-.Weather canvas {
-  height: 64px;
-  width: 64px;
-}
+
 .Weather .current-temp {
   font-size: 64px;
   line-height: 64px;

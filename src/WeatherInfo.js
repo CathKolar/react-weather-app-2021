@@ -15,7 +15,7 @@ export default function WeatherInfo({ weatherData }) {
       </ul>
       <div className="row mt-3">
         <div className="col-6">
-          <WeatherIcon code={weatherData.icon} />
+          <WeatherIcon code={weatherData.icon} size="53" />
           <span className="current-temp pl-3">
             <WeatherTemperature celsius={weatherData.currentTemp} />
           </span>

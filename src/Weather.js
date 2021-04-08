@@ -3,6 +3,7 @@ import axios from "axios";
 import "dotenv";
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
+import Forecast from "./Forecast";
 
 export default function Weather({ defaultCity }) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -60,6 +61,7 @@ export default function Weather({ defaultCity }) {
         <div className="container mt-3">
           <WeatherInfo weatherData={weatherData} />
         </div>
+        <Forecast />
       </div>
     );
   } else {
