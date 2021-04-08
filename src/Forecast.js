@@ -18,9 +18,15 @@ export default function Forecast({ coordinates }) {
     return (
       <div className="Forecast">
         <div className="row ">
-          <div className="col-sm">
-            <ForecastDaily forecastData={forecast[1]} />{" "}
-          </div>
+          {forecast.map(function (dailyForecast, index) {
+            if (index >= 1 && index < 6) {
+              return (
+                <div className="col-sm" key={index}>
+                  <ForecastDaily forecastData={dailyForecast} />
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
     );
