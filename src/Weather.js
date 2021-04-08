@@ -12,6 +12,7 @@ export default function Weather({ defaultCity }) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
       currentTemp: response.data.main.temp,
@@ -61,7 +62,7 @@ export default function Weather({ defaultCity }) {
         <div className="container mt-3">
           <WeatherInfo weatherData={weatherData} />
         </div>
-        <Forecast />
+        <Forecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
