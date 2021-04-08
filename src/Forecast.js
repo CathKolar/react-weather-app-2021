@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "dotenv";
 
 import "./Forecast.css";
@@ -8,6 +8,10 @@ import ForecastDaily from "./ForecastDaily";
 export default function Forecast({ coordinates }) {
   const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);
+
+  useEffect(() => {
+    setLoaded(false);
+  }, [coordinates]);
 
   function handleResponse(response) {
     setForecast(response.data.daily);
