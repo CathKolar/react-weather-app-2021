@@ -1,7 +1,20 @@
 .Weather {
-  border: 1px solid darkgrey;
-  border-radius: 13px;
-  font-family: Arial, Helvetica, sans-serif;
+  color: #f2f2f1;
+  font-family: "Yantramanav", sans-serif;
+  max-width: 510px;
+  border: 2px solid #f2f2f1;
+  box-shadow: 5px 5px 10px rgba(21, 163, 184, 0.3);
+  border-radius: 20px;
+
+  background-image: linear-gradient(to top, #4dd1e2, #15a3b8);
+}
+
+.Weather form {
+  max-width: 350px;
+}
+.Weather input {
+  background-color: #f2f2f1;
+  border: 2px solid #15a3b8;
 }
 
 .Weather ul {
@@ -10,11 +23,9 @@
 }
 .Weather li {
   font-size: 16px;
-  font-weight: 100;
-  line-height: 19px;
+  line-height: 20px;
   list-style: none;
 }
-
 
 .Weather .current-temp {
   font-size: 64px;
@@ -27,4 +38,14 @@
   position: relative;
   line-height: 1;
   top: -34px;
+}
+
+.Weather .btn-branding {
+  border: 1px solid #f2f2f1;
+  color: #f2f2f1;
+  background-image: linear-gradient(to top, #4dd1e2, #15a3b8);
+  transition: all 10s ease-in-out;
+}
+.Weather .btn-branding:hover {
+  background-image: linear-gradient(to bottom, #4dd1e2, #15a3b8);
 }

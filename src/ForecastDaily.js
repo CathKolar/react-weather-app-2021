@@ -20,8 +20,8 @@ export default function ForecastDaily({ forecastData }) {
   }
 
   return (
-    <div className="ForecastDaily">
-      <div className="Forecast-day">{day()}</div>
+    <div className="ForecastDaily mb-2">
+      <div className="Forecast-day pb-1">{day()}</div>
       <div className="Forecast-icon">
         <WeatherIcon code={forecastData.weather[0].icon} size={33} />
       </div>{" "}

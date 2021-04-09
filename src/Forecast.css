@@ -1,7 +1,14 @@
 .Forecast {
+  color: #f2f2f1;
   text-align: center;
+  background-image: linear-gradient(to top, #4dd1e2, #15a3b8);
+  border: 2px solid #f2f2f1;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(21, 163, 184, 0.3);
+
 }
+
 .Forecast-temp-min {
-  opacity: 0.6;
+  opacity: 0.8;
   margin-left: 5px;
 }

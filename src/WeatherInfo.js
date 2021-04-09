@@ -5,7 +5,7 @@ import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo({ weatherData }) {
   return (
-    <div className="WeatherInfo">
+    <div className="WeatherInfo pb-3">
       <h1>{weatherData.city}</h1>
       <ul>
         <li>
@@ -22,6 +22,7 @@ export default function WeatherInfo({ weatherData }) {
         </div>
         <div className="col-6">
           <ul>
+            <li>Feels like: {Math.round(weatherData.feelsLike)}°C</li>
             <li>Humidity: {weatherData.humidity}%</li>
             <li>Wind: {weatherData.windSpeed} km/h</li>
           </ul>

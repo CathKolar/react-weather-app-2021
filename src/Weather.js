@@ -16,6 +16,7 @@ export default function Weather({ defaultCity }) {
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
       currentTemp: response.data.main.temp,
+      feelsLike: response.data.main.feels_like,
       humidity: response.data.main.humidity,
       windSpeed: response.data.wind.speed,
       windDirection: response.data.wind.deg,
@@ -42,7 +43,7 @@ export default function Weather({ defaultCity }) {
     return (
       <div className="Weather container mt-5">
         <form onSubmit={handleSubmit}>
-          <div className="row mt-2 ml-2">
+          <div className="row mt-3 ml-1">
             {" "}
             <div className="col-9">
               <input
@@ -54,7 +55,11 @@ export default function Weather({ defaultCity }) {
               />
             </div>
             <div className="col-3">
-              <input type="submit" value="search" className="btn btn-primary" />
+              <input
+                type="submit"
+                value="search"
+                className="btn btn-branding"
+              />
             </div>
           </div>
         </form>
