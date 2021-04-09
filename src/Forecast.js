@@ -29,6 +29,8 @@ export default function Forecast({ coordinates }) {
                   <ForecastDaily forecastData={dailyForecast} />
                 </div>
               );
+            } else {
+              return null;
             }
           })}
         </div>
