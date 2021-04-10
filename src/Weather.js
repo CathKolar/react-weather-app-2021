@@ -41,6 +41,17 @@ export default function Weather({ defaultCity }) {
     axios.get(apiUrl).then(handleResponse);
   }
 
+  function currentLocation(position) {
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function getCurrentLocation() {
+    navigator.geolocation.getCurrentPosition(currentLocation);
+  }
+
   if (weatherData.ready) {
     return (
       <div className="Weather container mt-5">
@@ -54,7 +65,16 @@ export default function Weather({ defaultCity }) {
                 className="form-control"
                 autoFocus="on"
                 onChange={handleCityChange}
-              />
+              />{" "}
+              <div className="Locate">
+                <button
+                  className="current-location-button"
+                  onClick={getCurrentLocation}
+                >
+                  {" "}
+                  ➢ Current Location{" "}
+                </button>
+              </div>
             </div>
             <div className="col-3">
               <input
