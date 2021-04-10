@@ -28,7 +28,7 @@ export default function Forecast({ coordinates }) {
 
   if (loaded) {
     return (
-      <div className="Forecast mb-4 d-flex justify-content-around">
+      <div className="Forecast mb-4 pl-4 pr-4">
         <div className="row">
           {forecast.map(function (dailyForecast, index) {
             if (index >= 1 && index < 6) {

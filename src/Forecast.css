@@ -5,10 +5,13 @@
   border: 2px solid #f2f2f1;
   border-radius: 20px;
   box-shadow: 5px 5px 10px rgba(21, 163, 184, 0.3);
+}
 
+.Forecast-day, .Forecast-temps {
+  font-size: 18px;
 }
 
 .Forecast-temp-min {
   opacity: 0.8;
-  margin-left: 5px;
+  margin-left: 6px;
 }

@@ -23,7 +23,7 @@ export default function ForecastDaily({ forecastData }) {
     <div className="ForecastDaily mb-2">
       <div className="Forecast-day pb-1">{day()}</div>
       <div className="Forecast-icon">
-        <WeatherIcon code={forecastData.weather[0].icon} size={33} />
+        <WeatherIcon code={forecastData.weather[0].icon} size={40} />
       </div>{" "}
       <div className="Forecast-temps">
         <span className="Forecast-temp-max">{maxTemp()}°</span>
