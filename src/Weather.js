@@ -16,6 +16,8 @@ export default function Weather({ defaultCity }) {
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
       currentTemp: response.data.main.temp,
+      high: response.data.main.temp_max,
+      low: response.data.main.temp_min,
       feelsLike: response.data.main.feels_like,
       humidity: response.data.main.humidity,
       windSpeed: response.data.wind.speed,

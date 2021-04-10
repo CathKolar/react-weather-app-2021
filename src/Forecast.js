@@ -28,12 +28,12 @@ export default function Forecast({ coordinates }) {
 
   if (loaded) {
     return (
-      <div className="Forecast mb-5">
-        <div className="row ">
+      <div className="Forecast mb-5 d-flex justify-content-around">
+        <div className="row">
           {forecast.map(function (dailyForecast, index) {
             if (index >= 1 && index < 6) {
               return (
-                <div className="col-sm mt-1" key={index}>
+                <div className="col-sm  mt-1" key={index}>
                   <ForecastDaily forecastData={dailyForecast} />
                 </div>
               );

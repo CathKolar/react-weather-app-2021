@@ -5,7 +5,6 @@
   border: 2px solid #f2f2f1;
   box-shadow: 5px 5px 10px rgba(21, 163, 184, 0.3);
   border-radius: 20px;
-
   background-image: linear-gradient(to top, #4dd1e2, #15a3b8);
 }
 
@@ -28,8 +27,8 @@
 }
 
 .Weather .current-temp {
-  font-size: 64px;
-  line-height: 64px;
+  font-size: 36px;
+  padding-bottom: 0;
 }
 
 .Weather .degree-unit {
@@ -37,7 +36,7 @@
   font-weight: 400;
   position: relative;
   line-height: 1;
-  top: -34px;
+  top: -20px;
 }
 
 .Weather .btn-branding {
@@ -48,4 +47,8 @@
 }
 .Weather .btn-branding:hover {
   background-image: linear-gradient(to bottom, #4dd1e2, #15a3b8);
+}
+
+.Weather .current-place-time {
+  line-height: 10px;
 }
