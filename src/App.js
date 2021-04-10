@@ -19,7 +19,7 @@ export default function App() {
             </a>
             by
             <a
-              href="https://www.linkedin.com/in/catherinekolar/"
+              href="https://www.catherinekolar.dev"
               target="_blank"
               rel="noreferrer"
               title="LinkedIn"
