@@ -66,15 +66,6 @@ export default function Weather({ defaultCity }) {
                 autoFocus="on"
                 onChange={handleCityChange}
               />{" "}
-              <div className="Locate">
-                <button
-                  className="current-location-button"
-                  onClick={getCurrentLocation}
-                >
-                  {" "}
-                  ➢ Current Location{" "}
-                </button>
-              </div>
             </div>
             <div className="col-3">
               <input
@@ -85,6 +76,15 @@ export default function Weather({ defaultCity }) {
             </div>
           </div>
         </form>
+        <div className="Locate">
+          <button
+            className="current-location-button"
+            onClick={getCurrentLocation}
+          >
+            {" "}
+            ➢ Current Location{" "}
+          </button>
+        </div>
 
         <div className="container mt-3">
           <WeatherInfo weatherData={weatherData} />
